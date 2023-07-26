@@ -1,0 +1,17 @@
+{
+  "name": "nicolas-caceres-exercise",
+  "version": "1.0.0",
+  "description": "ejercicios",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon app.js"
+  },
+  "author": "Nicolas Caceres Latorre",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "uuid": "^9.0.0",
+    "yargs": "^17.7.2"
+  }
+}

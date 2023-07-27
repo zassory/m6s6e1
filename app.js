@@ -8,12 +8,15 @@ const {
 
 const funcionCreate = require('./controllers/funcionCreate');
 const funcionRead = require('./controllers/funcionRead');
+const funcionUpdate = require('./controllers/functionUpdate');
+//const funcionDelete = require('./controllers/funcionDelete');
+const funcionDelete = require('./controllers/funcionDelete');
 
 const args = yargs
     .command('create','Crear una nueva tarea', createConfig , (argv) => funcionCreate(argv))
     .command('read','Mostrar todas las tareas',{}, (argv) => funcionRead())
-    .command('update','Actualizar o modificar una tarea',updateConfig)
-    .command('delete','Eliminar una tarea',deleteConfig)
+    .command('update','Actualizar o modificar una tarea',updateConfig, (argv) => funcionUpdate(argv))
+    .command('delete','Eliminar una tarea',deleteConfig, (argv) => funcionDelete(argv))
     .help()
     .argv
 

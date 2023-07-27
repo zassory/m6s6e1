@@ -19,6 +19,11 @@ const updateConfig = {
     contenido: {
         describe: 'Nueva descripcion de la tarea a realizar',
         alias: 'c'
+    },
+    id:{
+        describe: 'El id de la tarea a actualizar o modificar',
+        alias: 'i',
+        demandOption: true
     }
 }
 
